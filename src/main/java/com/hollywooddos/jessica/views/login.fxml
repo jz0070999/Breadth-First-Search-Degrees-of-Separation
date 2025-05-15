@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+    fx:controller="com.hollywooddos.jessica.views.LoginScreen"
+    stylesheets="@style.css" styleClass="pageBackgroundPadding">
+
+    <center>
+        <HBox spacing="64" alignment="CENTER">
+            <!-- Decorative panel on the left -->
+            <Rectangle width="300" height="500" styleClass="rectangle" />
+
+            <!-- Login form on the right -->
+            <VBox spacing="20" alignment="CENTER_LEFT">
+                <!-- Username & Password inputs -->
+                <VBox spacing="20">
+                    <HBox spacing="10" alignment="CENTER_LEFT">
+                        <Label text="Username:" styleClass="subheaderLabel" />
+                        <TextField fx:id="usernameField" promptText="Enter username"
+                            styleClass="textField" />
+                    </HBox>
+                    <HBox spacing="10" alignment="CENTER_LEFT">
+                        <Label text="Password:" styleClass="subheaderLabel" />
+                        <PasswordField fx:id="passwordField" promptText="Enter password"
+                            styleClass="textField" />
+                    </HBox>
+                </VBox>
+
+                <!-- Error message -->
+                <Label fx:id="errorLabel"
+                    text="Please enter both username and password"
+                    styleClass="errorLabel"
+                    visible="false" />
+
+                <!-- Single Login button -->
+                <Button text="Login"
+                    onAction="#showStartPageWithGreeting"
+                    styleClass="button-clear" />
+                <!-- Register button -->
+                <Button text="Register"
+                    onAction="#showRegisterPage"
+                    styleClass="button" />
+
+            </VBox>
+        </HBox>
+    </center>
+</BorderPane>

@@ -1,0 +1,20 @@
+.list-view {
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+    -fx-border-color: transparent;
+    /* no outer border */
+    -fx-background-color: transparent;
+    /* transparent background */
+}
+
+.list-view:focused {
+    -fx-border-color: transparent;
+}
+
+.list-cell {
+    -fx-background-color: white;
+}
+
+.list-cell:odd {
+    -fx-background-color: white;
+}

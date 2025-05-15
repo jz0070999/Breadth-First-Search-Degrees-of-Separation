@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1"
+    fx:controller="com.hollywooddos.jessica.views.SeparationLayout"
+    stylesheets="@style.css"
+    styleClass="pageBackgroundPadding">
+
+    <children>
+        <Label text="Hollywood Actors Degrees of Separation" styleClass="headerLabel" />
+        <VBox stylesheets="@listview-style.css">
+            <ListView fx:id="entryList" styleClass="list-view" VBox.vgrow="ALWAYS" />
+        </VBox>
+        <!-- Buttom button bar -->
+        <HBox spacing="10" alignment="CENTER_LEFT">
+            <Button text="Back" onAction="#goBackToPickerScreen" styleClass="button-clear" />
+        </HBox>
+    </children>
+</VBox>

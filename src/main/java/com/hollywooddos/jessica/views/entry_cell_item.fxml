@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1"
+    fx:controller="com.hollywooddos.jessica.views.EntryCellItem">
+    <StackPane alignment="CENTER">
+        <children>
+            <Rectangle fx:id="entryRectangle" width="200.0" arcWidth="20" arcHeight="20"
+                height="50.0" fill="blue"
+                stroke="transparent" />
+            <Label fx:id="entryName" styleClass="labelRegular" />
+        </children>
+    </StackPane>
+
+    <VBox fx:id="arrow" alignment="CENTER">
+        <Label fx:id="pointsToName" styleClass="labelSmall" text="starred in" />
+        <ImageView fitHeight="36.0" fitWidth="17.0">
+            <image>
+                <Image url="@../assets/arrow.png" />
+            </image>
+        </ImageView>
+    </VBox>
+</VBox>
